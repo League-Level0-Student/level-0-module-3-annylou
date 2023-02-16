@@ -21,16 +21,14 @@ public class WalkOfFame {
 			rob.penUp();
 			count+=1;
 		} */
-		int q = 0;
-		int o = 0;
+		int i = 0;
 		/** THE CHALLENGE: **/
 		/* Make the robot draw a line of 10 stars (see recipe to see how it should look)
 		 * Hint: The distance between stars is 50. */
-		for(int i=0; i<1; i++) {
+	
 			rob.turn(90);
-			while(o<10); {
-			while(q<1) {
 			rob.move(50);
+	for(i=0; i<10; i++) {
 			while(count<5) {
 				rob.penDown();
 				rob.move(30);
@@ -38,15 +36,16 @@ public class WalkOfFame {
 				rob.penUp();
 				count+=1;
 				}
-			q+=1;
-			} 
-			o+=1;
+			rob.move(50);
+			count-=5;
 			}
-		}
+	 
 
 		
-		 
-
+		
+		
+		
+		
 	}
-
 }
+
